@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papa Louie 2 (Full Screen)</title>
+    <style>
+        /* Remove default browser gaps and hide scrollbars */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* Make the game container scale up to fill the viewport */
+        #game-container {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+    <script src="ruffle/ruffle.js"></script>
+</head>
+<body>
+
+    <div id="game-container">
+        <object data="papalouie2.swf" width="100%" height="100%">
+            <param name="movie" value="papalouie2.swf">
+            <param name="allowScriptAccess" value="always">
+            <!-- Keeps the graphics crisp when stretched -->
+            <param name="quality" value="high"> 
+        </object>
+    </div>
+
+</body>
+</html>
